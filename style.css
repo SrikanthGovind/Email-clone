@@ -1,0 +1,258 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-container {
+  display: flex;
+  position: relative;
+}
+.sidebar {
+  width: 23%;
+  background-color: #fff;
+  border-right: 1px solid #ededed;
+  height: 100vh;
+  overflow: scroll;
+  position: fixed;
+}
+.sidebar-top-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.sidebar-header {
+  margin-bottom: 12px;
+  color: #353535;
+}
+
+.sidebar-search {
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 10px 10px 38px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+
+  &::placeholder {
+    color: #ccc;
+    font-size: 16px;
+  }
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #888;
+  pointer-events: none;
+}
+
+.sidebar-menu {
+  border: 1px solid #8d8d8d;
+  border-radius: 30px;
+  display: flex;
+}
+
+.label {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  gap: 10px;
+  font-size: 15px;
+}
+.label.general {
+  border-right: 1px solid #8d8d8d;
+  background-color: #e8def8;
+  border-radius: 30px 0 0 30px;
+}
+.label.deal {
+  border-radius: 0px 30px 30px 0px;
+}
+.fa-solid.fa-check {
+  font-size: 14px;
+}
+
+.email-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.email-card {
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 16px 16px 30px 16px;
+
+  &:first-child {
+    background-color: #f7f7f7;
+  }
+}
+.email-card-icon {
+  width: 10%;
+}
+.email-card-wrapper {
+  width: 90%;
+}
+.email-card h4 {
+  /* font-size: 20px; */
+  margin-bottom: 7px;
+  color: #353535;
+}
+
+.email-card p {
+  /* font-size: 18px; */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 2px;
+ color:#505050
+}
+
+.email-btn-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.email-btn {
+  padding: 7px 15px;
+  border: 0;
+  border-radius: 6px;
+}
+.email-btn.deal {
+  background: #8bc57a;
+}
+.email-btn.general {
+  background: #e2a85d;
+}
+
+.Email_Conversation {
+  width: calc(100% - 23%);
+  left: 23%;
+  display: flex;
+  color:#505050;
+  position: absolute;
+  box-sizing: border-box;
+}
+.email-thread-container {
+  width: 65%;
+  border-right: 1px solid #ececec;
+}
+.email-header {
+  color: #353535;
+  padding: 20px;
+}
+.email-content-container {
+  border: 1px solid #ececec;
+  border-radius: 5px;
+      padding: 14px;
+}
+.email-block{
+
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.email-top{
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.subject{
+     /* font-size: 18px; */
+}
+.email-info{
+  p{
+    padding-bottom: 4px;
+    /* font-size: 18px; */
+     a{
+       color:#505050;
+     }
+  }
+}
+.email-body{
+   p{
+    /* font-size: 18px; */
+   }
+}
+.email-insight-container {
+  width: 35%;
+}
+.insight-header{
+  color: #353535;
+  padding: 20px;
+}
+.insight-wrapper{
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   border-bottom: 1px solid #d1d0d0 ;
+}
+.table-container{
+   border-top-left-radius: 6px;
+   border-top-right-radius: 6px;
+  background-color:#e6e0e9;
+
+}
+.insight-item{
+  padding: 10px;
+  border-bottom: 1px solid #8f8b95;
+
+  label{
+    color:#918d97;
+    font-size: 14px;
+  }
+}
+.insight-value{
+  color:#575459;
+}
+.insight-summary{
+     display: flex;
+   flex-direction: column;
+   gap: 20px;
+
+}
+.insight-summary-body{
+     padding: 20px;
+   border: 1px solid #d1d0d0;
+   border-radius: 10px;
+}
+.insight-feedback{
+   padding: 20px;
+      display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.feedback-content{
+   padding: 20px;
+   border: 1px solid #d1d0d0;
+   border-radius: 10px;
+}
+
+.feedback-buttons {
+  display: flex;
+  gap:20px;
+  position: fixed;
+  right: 70px;
+  bottom:80px;
+}
+
+.feedback-buttons button{
+  padding: 7px 10px;
+  background: #2c2c2c;
+  color: white;
+  border-radius: 4px;
+  font-size: 20px;
+}
